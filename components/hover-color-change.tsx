@@ -5,7 +5,13 @@ interface rPHoverColorChange {
   label: string;
   url?: string | undefined;
 }
-export default function HoverColorChange({ label, url }: { label: string }) {
+export default function HoverColorChange({
+  label,
+  url,
+}: {
+  label: string;
+  url: string | undefined;
+}) {
   return url ? (
     <a
       href={url}
