@@ -2,7 +2,7 @@ const DUMMY = "¯_._(◉‿◉)_._/¯".split("");
 const DUMMY1 = "ver 2.0.9".split("");
 
 export default function Footer() {
-  const date = new Date().toLocaleDateString();
+  const date = new Date().getFullYear();
 
   return (
     <footer className="self-start text-lg">
