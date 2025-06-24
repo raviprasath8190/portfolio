@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection {
+  color: #fff;
+  background: #00ff73ce;
+}
+
+::selection {
+  color: #fff;
+  background: #00ff73ce;
+}
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+/* @media (prefers-color-scheme: dark) {
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.movement-div {
+  width: 500px;
+  aspect-ratio: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.09s ease;
+  mask: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, #00000001 50%);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+  z-index: -3;
+  opacity: 0.5;
+}
+
+.sub-div {
+  overflow: hidden;
+}
+
+.cssanimation {
+  animation-duration: 1s;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 10px;
+  }
+
+  main {
+    max-width: 90vw !important;
+  }
+}
+
+.fade-animation {
+  opacity: 0;
+  animation: fade 8s infinite;
+  animation-delay: 0s;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
