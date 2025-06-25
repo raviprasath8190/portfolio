@@ -7,6 +7,7 @@ import SubHeading from "@/components/sub-heading";
 import EduDetails, { EducationDetailsProps } from "@/components/edu-details";
 import Image from "next/image";
 import SkillSet, { SkillSetProps } from "@/components/skill-set";
+import Certificate, { certifyProp } from "@/components/certificate";
 
 export const CONNECTION: PCategory[] = [
   { label: "GITHUB", url: "https://github.com/raviprasath8190" },
@@ -44,6 +45,18 @@ const Skill_details: SkillSetProps[] = [
       {
         Sname: "Tailwind.css",
         url: "https://tailwindcss.com/",
+      },
+    ],
+  },
+];
+
+const certification: certifyProp[] = [
+  {
+    cerHeading: "STACK",
+    cerTypes: [
+      {
+        Cname: "React.js",
+        url: "https://www.udemy.com/certificate/UC-904cfaed-180b-4f6f-9a00-37630546ddd0/",
       },
     ],
   },
@@ -147,6 +160,12 @@ export default function Home() {
         <SubHeading label="SKILLS" />
         {Skill_details.map((e) => (
           <SkillSet {...e} key={e.heading} />
+        ))}
+
+        <div className="h-12" />
+        <SubHeading label="CERTIFIED" />
+        {certification.map((e) => (
+          <Certificate {...e} key={e.cerHeading} />
         ))}
 
         <div className="flex mt-12">

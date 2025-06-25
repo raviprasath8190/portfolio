@@ -5,6 +5,7 @@ export interface SkillSetProps {
   heading: string;
   skills: { Sname: string; url?: string | undefined }[];
 }
+
 export default function SkillSet({ heading, skills }: SkillSetProps) {
   return (
     <div className="text-xl flex justify-start mt-8 w-full flex flex-col md:flex-row">
