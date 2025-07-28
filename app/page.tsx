@@ -115,7 +115,7 @@ export default function Home() {
               className="text-xl text-green-400"
             />
             <RandomLetters
-              text="Fornt-End-Developer"
+              text="Front-End-Developer"
               className=" flex justify-center"
             />
           </div>
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="flex mt-12">
           <ColoredBtn
             variant="normal"
-            href="/RAVIPRASATH D. FrontEndDeveloper CV..pdf"
+            href="RAVIPRASATH D. Software_Developer CV.pdf"
             download
             label="Download resume"
           />
