@@ -1,5 +1,5 @@
 const DUMMY = "¯_._(◉‿◉)_._/¯".split("");
-const DUMMY1 = "ver 2.0.9".split("");
+const DUMMY1 = "ver 15.0".split("");
 
 export default function Footer() {
   const date = new Date().getFullYear();

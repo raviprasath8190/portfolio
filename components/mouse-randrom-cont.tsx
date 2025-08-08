@@ -42,7 +42,7 @@ const Div1 = memo(() => {
       }}
     >
       {grid?.map((row, rowIndex) => (
-        <div className="ml-2 text-green-700 text-2xl" key={rowIndex}>
+        <div className="ml-2 mr-2 text-green-700 text-1xl" key={rowIndex}>
           {row.map((cell, colIndex) => (
             <NumDiv e={cell} i={colIndex} key={colIndex} />
           ))}
@@ -64,7 +64,7 @@ const Div2 = memo(() => {
       }}
     >
       {grid?.map((row, rowIndex) => (
-        <div className="ml-2 text-green-700 text-2xl" key={rowIndex}>
+        <div className="ml-2 mr-2 text-green-700 text-1xl" key={rowIndex}>
           {row.map((cell, colIndex) => (
             <NumDiv e={cell} i={colIndex} key={colIndex} />
           ))}
@@ -87,7 +87,7 @@ const Div3 = memo(() => {
       }}
     >
       {grid?.map((row, rowIndex) => (
-        <div className="ml-2 text-green-700 text-2xl" key={rowIndex}>
+        <div className="ml-2 mr-2 text-green-700 text-1xl" key={rowIndex}>
           {row.map((cell, colIndex) => (
             <NumDiv e={cell} i={colIndex} key={colIndex} />
           ))}
